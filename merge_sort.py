@@ -11,6 +11,8 @@ def merge_sort(arr):
     list: The sorted list.
     """
     
+    # Feedback: Great job on the function and variable naming. The code is very readable!
+    
     if len(arr) <= 1: # Here i check if input array has 1 or 0 elements
         return arr  # already sorted
     mid = len(arr) // 2  # Otherwise, find middle point
@@ -53,5 +55,7 @@ if __name__ == "__main__":
     input_list = [1000,5,39,9,45,98,600,5621] # Example
     print("Original List:", input_list)
     
+    # Suggestion: Consider adding unit tests for various edge cases, such as negative numbers, duplicates, and already sorted lists.
+
     sorted_list = merge_sort(input_list)
     print("Sorted List:", sorted_list)
